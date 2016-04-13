@@ -1,682 +1,128 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
     
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Sơ yếu lý lịch của Nguyễn Thanh Tùng</title>
-        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
-        rel="stylesheet">
-        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
-        rel="stylesheet">
-        <link rel="icon" type="image/x-icon" href="http://s2.postimg.org/hypb9ndx1/favicon.png"
-        />
-        <style type="text/css">
-            @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
-        @charset "utf-8";
-        @-webkit-viewport   { width: device-width; }
-        @-moz-viewport      { width: device-width; }
-        @-ms-viewport       { width: device-width; }
-        @-o-viewport        { width: device-width; }
-        @viewport           { width: device-width; }
-        
-        body{
-          font-family: 'Open Sans', Arial, Tahoma;
-          font-weight: 400;
-          color: #363636;
-          background: #334960;
-        }
-        
-        div {
-          border-radius: 10px;
-        }
-        blockquote {
-          font-size: 1em;
-        }
-        
-        .container{
-          margin-top: 80px;
-          margin-bottom: 15px;
-          background: #fff;
-        }
-        
-        #photo-header{
-          margin-top: -75px;
-        }
-        #photo{
-          width: 160px;
-          height: 160px;
-          border-radius: 50%;
-          overflow: hidden;
-          padding: 5px;
-          background: #334960;
-          display: inline-block;
-        }
-        #photo img{
-          width: 150px;
-          height: 150px;
-          border-radius: 50%;
-        }
-        #text-header h1{
-          margin: 0;
-          padding: 0;
-          font-size: 1.5em;
-          font-weight: 700;
-          text-transform: uppercase;
-          letter-spacing: -1px;
-        }
-        #text-header h1::first-line{
-          font-size: 1.5em;
-          font-weight: 800;
-          line-height: 1.5em;
-        }
-        #text-header h1 span{
-          color: #334960;
-          opacity: 1;
-        }
-        #text-header h1 sup{
-          opacity: 0.5;
-        }
-        #text-header:after{
-          width: 100%;
-          height: 3px;
-          border-bottom: 1px solid #ddd;
-          margin-top: 15px;
-          content: '';
-          display: block;
-        }
-        
-        .box{
-          padding-bottom: 10px;
-          margin-bottom: 25px;
-        }
-        .box h2{
-          color: #227c74;
-          font-size: 1.5em;
-          font-weight: 700;
-          text-transform: uppercase;
-        }
-        
-        #awards,
-        #education{
-          margin-top: 20px;
-          position: relative;
-          padding: 1em 0;
-          list-style: none;
-        }
-        #awards:before,
-        #education:before {
-          width: 5px;
-          height: 100%;
-          position: absolute;
-          left: 35px;
-          top: 0;
-          content: ' ';
-          display: block;
-          background: #32475c;
-          background: -moz-linear-gradient(top,  #ffffff 0%, #32475c 7%, #32475c 89%, #ffffff 100%);
-          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(7%,#32475c), color-stop(89%,#32475c), color-stop(100%,#ffffff));
-          background: -webkit-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
-          background: -o-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
-          background: -ms-linear-gradient(top,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
-          background: linear-gradient(to bottom,  #ffffff 0%,#32475c 7%,#32475c 89%,#ffffff 100%);
-          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
-        }
-        #awards li,
-        #education li{
-          width: 100%;
-          z-index: 2;
-          position: relative;
-          float: left;
-        }
-        #awards .year,
-        #education .year{
-          width: 10%;
-          background: #fff;
-          padding: 10px;
-          font-weight: 700;
-          display: inline-block;
-        }
-        #awards .description,
-        #education .description{
-          width: 85%;
-          display: inline-block;
-          background: #eee;
-          margin-bottom: 10px;
-          position: relative;
-          padding: 10px;
-          border-bottom: 1px solid #ccc;
-          border-right: 1px solid #ccc;
-        }
-        #awards .description:after,
-        #education .description:after {
-          content: '';
-          position: absolute;
-          top: 15px;
-          right: 0;
-          left: -16px;
-          height: 0;
-          width: 0;
-          border: solid transparent;
-          border-right-color: #eee;
-          border-width: 8px;
-          pointer-events: none;
-        }
-        #awards .description h3,
-        #education .description h3{
-          font-size: 1.2em;
-          margin: 0;
-          padding: 0;
-          font-weight: 700;
-        }
-        #awards .description p,
-        #education .description p{
-          margin-top: 5px;
-          padding: 0;
-        }
-        
-        .job{
-          margin-bottom: 15px;
-        }
-        .job .details {
-          margin-left: 3%;
-          width: 95%;
-          padding: 10px;
-          margin-bottom: 10px;
-          background: #eee;
-          border-bottom: 1px solid #ccc;
-          border-right: 1px solid #ccc;
-        }
-        .job .where{
-          font-size: 1.2em;
-          font-weight: bold;
-        }
-        .job .year{
-          opacity: 1;
-        }
-        .job .profession{
-          font-size: 1.2em;
-          font-weight: bold;
-        }
-        .job .description{
-          line-height: 1.5em;
-        }
-        .job .highlights{
-          padding: 10px 0;
-          font-weight: bold;
-        }
-        .publication .name{
-          font-size: 1em;
-          font-weight: bold;
-        }
-        .publication .year{
-            opacity: 0.7;
-        }
-        .publication p{
-          margin: 0;
-          padding-top: 10px;
-        }
-        
-        .contact-item{
-          width: 100%;
-          float: left;
-        }
-        .contact-item .icon{
-          padding: 10px;
-          border-right: 1px solid #ccc;
-          border-bottom: 1px solid #ccc;
-          color: #32475c;
-          background: #eee;
-        }
-        .contact-item:last-child .icon{
-          border-bottom: none;
-        }
-        .contact-item .title{
-          width: 80%;
-          width: calc(100% - 55px);
-          font-weight: 800;
-          opacity: 1;
-        }
-        .contact-item .title.only{
-          margin-top: 10px;
-        }
-        .contact-item .description{
-          width: 80%;
-          width: calc(100% - 55px);
-          color: #334960;
-        }
-        
-        .item-interests,
-        .item-skills{
-          height: 30px;
-          color: #334960;
-          padding: 5px 10px;
-          margin-bottom: 5px;
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          font-size: 1.1em;
-          font-weight: 600;
-        }
-        .interest,
-        .skill{
-          color: #fff;
-          display: inline-block;
-          margin-right: 5px;
-          margin-bottom: 5px;
-          padding: 5px 10px;
-          background: #32475c;
-          position: relative;
-          font-size: .85em;
-        }
-        .skill-level {
-          background-color: #227c74;
-          border-radius: 4px;
-          color: #fff;
-          padding: 1px 8px;
-          font-size: .75em;
-          position: absolute;
-          margin: 1px 10px;
-        }
-        
-        #language-skills .skill{
-          margin: 10px 0;
-          padding-bottom: 10px;
-          border-bottom: 1px solid #eee;
-        }
-        
-        @media (min-width: 500px) {
-          #education .description{
-            width: 85%;
-          }
-        }
-        @media (min-width: 768px) {
-          #education .description{
-            width: 85%;
-          }
-        }
-        @media (min-width: 992px) {
-          #education .description{
-            width: 87%;
-          }
-        }
-        @media (min-width: 1200px) {
-          #education .description{
-            width: 90%;
-          }
-        }
-        </style>
-        <style type="text/css" media="print">
-            body {
-          font-size: .95em;
-          -webkit-print-color-adjust: exact;
-        }
-        
-        a[href]:after {
-          content: none !important;
-        }
-        
-        #photo{
-          display: none;
-        }
-        
-        .box {
-          margin-bottom: -10px;
-        }
-        .col-sm-5{
-          width: 40%;
-          padding: 0 15px;
-        }
-        
-        .col-sm-7{
-          width: 60%;
-          padding: 0 15px;
-        }
-        
-        .skills .col-sm-offset-1,
-        .interests .col-sm-offset-1{
-          margin-top: -10px;
-          margin-bottom: 5px;
-        }
-        
-        #awards:before,
-        #education:before {
-          background: none;
-        }
-        
-        #awards .description,
-        #education .description,
-        .job .details {
-          border: 1px solid #eee;
-        }
-        .publication,
-        .publication .panel-heading,
-        .publication .name{
-          margin: 0;
-          padding: 0 5px;
-          border: none;
-        }
-        .publication .panel-body {
-          padding: 0 10px;
-          margin: 0;
-        }
-        
-        .badge {
-          margin: 0;
-        }
-        
-        .list-group-item{
-          border: none;
-          margin: 0;
-          padding: 5px 15px;
-        }
-        .list-group-item:after{
-          content: '';
-          position: absolute;
-          top: 8px;
-          right: 0;
-          left: -1px;
-          height: 0;
-          width: 0;
-          border: solid transparent;
-          border-right-color: #999;
-          border-width: 4px;
-          pointer-events: none;
-         }
-        </style>
-    </head>
     
-    <body>
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div id="photo-header" class="text-center">
-                        <!-- PHOTO (AVATAR) -->
-                        <div id="photo">
-                            <img src="tung.png" alt="avatar">
-                        </div>
-                        <div id="text-header">
-                             <h1>Nguyễn Thanh Tùng<br><span>Kĩ sư phần mềm</span></h1>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
-                        </div>
-                    </div>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.min.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+
+    <!-- Add your site or application content here -->
+    <div >
+        <nav class="navbar navbar-default navbar-fixed-top" style="background: white;">
+            <div class="container-fluid row" style="pading-left: 0px; padding-right: 0px;">
+                <div class="col-md-3"></div>
+                <div class="collapse navbar-collapse col-md-6" >
+                    <ul class="nav navbar-nav" >
+                        <li class="active"><a href="#">Home</a></li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                        <li><a href="#">Host List</a></li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                        <li><a href="#">Become A Host</a></li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                        <li><a href="#">About</a></li>
+                    </ul>
                 </div>
+                <div class="col-md-3" style="float: right">
+                    <ul class="nav navbar-nav" >
+                        
+                        <li><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i> Sign Up</a></li>
+                        <li><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
+                    </ul>
+                </div>
+                    
             </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-7">
-                    <!-- ABOUT ME -->
-                    <div class="box">
-                         <h2><i class="fa fa-user ico"></i> Giới thiệu</h2>
-
-                        <p><strong>Là một nhà phát triển phần mềm full-stack hơn 1 năm kinh nghiệm</strong> đặc
-                            biệt trong các ứng dụng sử dụng ngôn ngữ Java. Quan tâm đến các công nghệ
-                            điện toán đám mây như AWS, Heroku và các ứng dụng thời gian thực sử dụng
-                            Nodejs.</p>
-                    </div>
-                    <!-- EDUCATION -->
-                    <div class="box">
-                         <h2><i class="fa fa-university ico"></i> Học vấn</h2>
-
-                        <ul id="education" class="clearfix">
-                            <li>
-                                <div class="year pull-left">2011 2015</div>
-                                <div class="description pull-right">
-                                     <h3>Đại Học Sư Phạm Kỹ Thuật Thành Phố Hồ Chí Minh</h3>
-
-                                    <p></p>
-                                    <p>GPA: 7.18</p>
-                                    <div>Bằng cấp</div>
-                                    <ul class="list-group">
-                                        <li class="list-group-item">FSOFT – GLOBAL JAVA DEVELOPER</li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- WORK EXPERIENCE -->
-                    <p></p>
-                    <div class="box">
-                         <h2><i class= "fa fa-suitcase ico"></i> Dự án và kinh nghiệm làm việc</h2>
-
-                        <p></p>
-                        <div class="job clearfix">
-                            <div class="row">
-                                <div class="details">
-                                    <div class="where">Imt-Solutions</div>
-                                    <div class="address"> <a href="http:&#x2F;&#x2F;www.imt-soft.com" target="_blank"><i class="fa fa-globe ico"></i> http:&#x2F;&#x2F;www.imt-soft.com</a>
-
-                                    </div>
-                                    <div class="year">29/02/2016 - Hiện nay</div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-offset-1 col-xs-11">
-                                    <div class="profession">Kĩ sư phần mềm</div>
-                                    <div class="description">Thực hiện tạo các bản vá lỗi cho các phiên bản của <a href="https://www.zimbra.com/"><strong>Zimbra mail server</strong></a>
-
-                                        <div
-                                        class="highlights">Kinh nghiệm học được</div>
-                                    <ul class="list-group">
-                                        <li class="list-group-item">Quen với các lệnh trên hệ điều hành linux</li>
-                                        <li class="list-group-item">Cách tạo patch vá lỗi cho ứng dụng Java lớn</li>
-                                        <li class="list-group-item">Giao tiếp tiếng anh cơ bản</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="job clearfix">
-                        <div class="row">
-                            <div class="details">
-                                <div class="where">Imt-Solutions</div>
-                                <div class="year">01/01/2016 - 28/02/2016</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-offset-1 col-xs-11">
-                                <div class="profession">Kĩ sư phần mềm</div>
-                                <div class="description">Thực hiện phát triển thêm các tính năng tạo báo cáo cho người quản lý
-                                    trong ứng dụng quản lý đèn đường <a href="http://www.gridcomm-plc.com">StreetLight</a>
-
-                                    <div
-                                    class="highlights">Kinh nghiệm học được</div>
-                                <ul class="list-group">
-                                    <li class="list-group-item">Spring MVC, Security, Websocket, RabbitMQ</li>
-                                    <li class="list-group-item">JavaScript, Jquery</li>
-                                    <li class="list-group-item">Hiểu hơn về kiến trúc ứng dụng lớn trong nền tảng Java</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="job clearfix">
-                    <div class="row">
-                        <div class="details">
-                            <div class="where">Imt-Solutions</div>
-                            <div class="year">01/04/2015 - 31/12/2015</div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-offset-1 col-xs-11">
-                            <div class="profession">Kĩ sư phần mềm</div>
-                            <div class="description">Tham gia nhóm lập trình hơn 25 người viết phần chức năng tạo báo cáo trong
-                                hệ thống quản lý bảo hiểm y tế của quận Sapporo, Nhật Bản
-                                <div class="highlights">Kinh nghiệm học được</div>
-                                <ul class="list-group">
-                                    <li class="list-group-item">Java core, SQL, cơ sở dữ liệu Oracle, Mybatis, Spring Batch</li>
-                                    <li class="list-group-item">Các kiến thức về viết mã dễ bảo trì, sửa chữa</li>
-                                    <li class="list-group-item">Kiến trúc ứng dụng lớn trong Java</li>
-                                    <li class="list-group-item">Quy trình làm phần mềm, cách giao tiếp giữa mọi người trong nhóm</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        </nav>
+        
+        <div class="container row" style="margin-top: 51px;
+                                    margin-left: 0px;
+                                    margin-right: 0px;
+                                    width: 100%;
+                                    height: 700px; 
+                                    background-image: url(img/start-tree.jpg); 
+                                    background-position: 50% 0px; 
+                                    background-size: cover;">
+            <div class="col-md-12">
+                <a style="text-decoration: none;
+                        width: 221px;
+                        height: 85px;
+                        background-image: url(img/wwoof-independents-logo.png);
+                        display: block;
+                        margin: 30px auto;"></a>
             </div>
-            
-        </div>
-        <div class="col-xs-12 col-sm-5">
-            <!-- CONTACT -->
-            <div class="box clearfix">
-                 <h2><i class="fa fa-bullseye ico"></i> Thông tin liên hệ</h2>
-
-                <div class="contact-item">
-                    <div class="icon pull-left text-center"><span class="fa fa-map-marker fa-fw"></span>
-                    </div>
-                    <div class="title only pull-right">Thị xã An Khê, tỉnh Gia Lai, Việt Nam</div>
-                    <div class="description pull-right"></div>
-                </div>
-                <div class="contact-item">
-                    <div class="icon pull-left text-center"><span class="fa fa-phone fa-fw"></span>
-                    </div>
-                    <div class="title only pull-right">0169-6899-620</div>
-                </div>
-                <div class="contact-item">
-                    <div class="icon pull-left text-center"><span class="fa fa-envelope fa-fw"></span>
-                    </div>
-                    <div class="title only pull-right"><a href="mailto:tungnt620@gmail.com" target="_blank">tungnt620@gmail.com</a>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <div class="icon pull-left text-center"><span class="fa fa-globe fa-fw"></span>
-                    </div>
-                    <div class="title only pull-right"><a href="http:&#x2F;&#x2F;tungjs.org" target="_blank">http:&#x2F;&#x2F;tungjs.org</a>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <div class="icon pull-left text-center"><span class="fa fa-github fa-fw"></span>
-                    </div>
-                    <div class="title pull-right">GitHub</div>
-                    <div class="description pull-right"><a href="https:&#x2F;&#x2F;github.com&#x2F;tungnt620" target="_blank">tungnt620</a>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <div class="icon pull-left text-center"><span class="fa fa-twitter fa-fw"></span>
-                    </div>
-                    <div class="title pull-right">Twitter</div>
-                    <div class="description pull-right"><a href="https:&#x2F;&#x2F;twitter.com&#x2F;TungNguyen_" target="_blank">TungNguyen_</a>
-                    </div>
-                </div>
+            <div class="col-md-12" style="color: white; text-align: center;">
+                <h2 style="">
+                    WWOOF Independents links volunteers with organic farmers and growers in countries without a national WWOOF organization.
+                </h2>
             </div>
-            <!-- SKILLS -->
-            <div class="box">
-                 <h2><i class="fa fa-tasks ico"></i> Kỹ năng</h2>
-
-                <div class="skills clearfix">
-                    <div class="item-skills">Phân tích thiết kế</div>
-                    <div class="col-sm-offset-1 col-sm-12 clearfix"> <span class="skill badge">OOP</span>
- <span class="skill badge">Design pattern</span>
-
-                    </div>
-                </div>
-                <div class="skills clearfix">
-                    <div class="item-skills">Ngôn ngữ, nền tảng</div>
-                    <div class="col-sm-offset-1 col-sm-12 clearfix"> <span class="skill badge">Java</span>
- <span class="skill badge">.Net</span>
-
-                        <span
-                        class="skill badge">Node.js</span> <span class="skill badge">Android</span>
-
-                    </div>
-                </div>
-                <div class="skills clearfix">
-                    <div class="item-skills">Web</div>
-                    <div class="col-sm-offset-1 col-sm-12 clearfix"> <span class="skill badge">SpringMVC</span>
- <span class="skill badge">HTML 5</span>
-
-                        <span
-                        class="skill badge">CSS</span> <span class="skill badge">Jquery</span>
- <span class="skill badge">AngularJs</span>
-
-                    </div>
-                </div>
-                <div class="skills clearfix">
-                    <div class="item-skills">Cơ sở dữ liệu</div>
-                    <div class="col-sm-offset-1 col-sm-12 clearfix"> <span class="skill badge">MySQL</span>
- <span class="skill badge">OracleSQL</span>
-
-                        <span
-                        class="skill badge">PostgreSQL</span> <span class="skill badge">ORM</span>
- <span class="skill badge">Hibernate</span>
-
-                            <span
-                            class="skill badge">JPA</span>
-                    </div>
-                </div>
-                <div class="skills clearfix">
-                    <div class="item-skills">Cloud</div>
-                    <div class="col-sm-offset-1 col-sm-12 clearfix"> <span class="skill badge">AWS</span>
- <span class="skill badge">Heroku</span>
-
-                    </div>
-                </div>
-                <div class="skills clearfix">
-                    <div class="item-skills">Quản lý dự án</div>
-                    <div class="col-sm-offset-1 col-sm-12 clearfix"> <span class="skill badge">TFS</span>
- <span class="skill badge">Git</span>
-
-                        <span
-                        class="skill badge">GitHub</span> <span class="skill badge">SVN</span>
-
-                    </div>
-                </div>
+            <div class="col-md-12" style="text-align: center; color: white; margin: 20px auto;">
+                <h3><a class="btn btn-success btn-lg">Sign Up</a> &nbsp;&nbsp;Or <a style="color: white" class="btn btn-link btn-lg">Login</a></h3>
             </div>
-			
-			<!-- AWARDS -->
-            <div class="box">
-                 <h2><i class="fa fa-certificate ico"></i> Giải thưởng</h2>
+            <div class="col-md-12 row" style="background: url('img/dashed-line.png');
+                                        background-repeat: no-repeat;
+                                        height: 200px;
+                                        position: relative;">
+                <div class="col-md-4" style="padding-top: 30px; padding-right: 100px; color: white">
+                    <h3 class="text-center">Travel the globe</h3>
+                    <p class="text-center">WWOOF Independents represents countries without a
+                        national WWOOF organisation, currently 
+                        454 hosts in 62 countries
+                    </p>
+                </div>
+                <div class="col-md-4" style="margin-top: -20px; padding-right: 100px; color: white">
+                    <h3 class="text-center">Meet new people</h3>
+				    <p class="text-center">Meet people that have a genuine interest in learning about organic growing, country living and ecologically sound lifestyles.</p>
+                    <a  class="text-center" style="color: white" href="#"><h4>HOW IT WORKS</h4></a>
+                </div>
+                <div class="col-md-4"  style="padding-top: 30px; padding-right: 100px; color: white">
+                    <h3 class="text-center">Learn organic farming</h3>
+				    <p class="text-center">Stay, eat and work with farmers that grow organically using ecologically sound methods and provide hands-on experience.</p>
 
-                <ul id="awards" class="clearfix">
-                    <li>
-                        <div class="year pull-left"> &nbsp;&nbsp;09 2014</div>
-                        <div class="description pull-right">
-                             <h3>Tham gia</h3>
-
-                            <p><i class="fa fa-trophy ico"></i> Olympic - ACM&#x2F;ICPC</p>
-                            <p></p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="year pull-left"> &nbsp;&nbsp;04 2014</div>
-                        <div class="description pull-right">
-                             <h3>Giải nhất</h3>
-
-                            <p><i class="fa fa-trophy ico"></i> Mastering IT</p>
-                            <p></p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="year pull-left"> &nbsp;&nbsp;09 2013</div>
-                        <div class="description pull-right">
-                             <h3>Tham gia</h3>
-
-                            <p><i class="fa fa-trophy ico"></i> Olympic - ACM&#x2F;ICPC</p>
-                            <p></p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-			
-            <!-- LANGUAGES -->
-            <div class="box">
-                 <h2><i class="fa fa-language ico"></i> Ngoại ngữ</h2>
-
-                <ul class="list-group">
-                    <li class=" list-group-item">Việt Nam<span class="skill badge pull-right"></span>
-                    </li>
-                    <li class=" list-group-item">English<span class="skill badge pull-right"></span>
-                    </li>
-                </ul>
+                </div>
             </div>
         </div>
-        </div>
-        </div>
-        <!-- JQUERY -->
-        <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <!-- BOOTSTRAP -->
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    </body>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
+    </script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+    </script>
+</body>
 
 </html>
