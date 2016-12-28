@@ -1,37 +1,88 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <script type="text/javascript">
-      /////////////////////////////////////////////////////////////////////////
-      // Single Page Apps for GitHub Pages
-      // https://github.com/rafrex/spa-github-pages
-      // Copyright (c) 2016 Rafael Pedicini, licensed under the MIT License
-      // ----------------------------------------------------------------------
-      // This script takes the current url and converts the path and query
-      // string into just a query string, and then redirects the browser
-      // to the new url with only a query string and hash fragment,
-      // e.g. http://www.foo.tld/one/two?a=b&c=d#qwe, becomes
-      // http://www.foo.tld/?p=/one/two&q=a=b~and~c=d#qwe
-      // Note: this 404.html file must be at least 512 bytes for it to work
-      // with Internet Explorer (it is currently > 512 bytes)
-      /////////////////////////////////////////////////////////////////////////
-      // If you're creating a Project Pages site and NOT using a custom domain,
-      // then set pathPrefix = true. This way the repo name will remain in the path:
-      // https://username.github.io/repo-name/one/two?a=b&c=d#qwe becomes
-      // https://username.github.io/repo-name/?p=/one/two&q=a=b~and~c=d#qwe
-      // Otherwise, leave pathPrefix as false.
-      var pathPrefix = false;
-      var l = window.location;
-      l.replace(
-        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        l.pathname.split('/').slice(0, 2 * pathPrefix).join('/') + '/?p=/' +
-        l.pathname.slice(1).split('/').slice(pathPrefix).join('/').replace(/&/g, '~and~') +
-        (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-        l.hash
-      );
-    </script>
-  </head>
-  <body>
-  </body>
+<html lang="en">
+
+<head>
+  <title>Quiz music</title>
+  <base href="/tungnt620.github.io/" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="description" content="A music quiz in Angular2 using the Spotify API.">
+
+<title>Quiz music - you can play with almost music in the world!</title>
+<meta name="description" content="Quiz music - you can play with almost music in the world!" />
+
+<meta property="og:title" content="Quiz music" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://game.zennisproducts.com/" />
+<meta property="og:image" content="http://game.zennisproducts.com/assets/music_quiz_social.png" />
+<meta property="og:description" content="Quiz music - you can play with almost music in the world!" />
+
+  <link rel="icon" href="assets/favicon.ico?v=1482938120526" type="image/x-icon">
+  <link rel="stylesheet" href="css/app.css?v=1482938120526">
+</head>
+
+<body class="cyan white-text">
+  <app>
+  </app>
+  <div id="app-loading">
+    <div class="loader running">
+    </div>
+  </div>
+  <div id="exception-modal" class="modal">
+    <div class="modal-content">
+      <h5 class="blue-grey-text">Whoops, something went wrong.</h5>
+      <br>
+      <p class="black-text">We encountered a problem with the app.</p>
+      <p class="black-text">If you experience unexpected behavior, please reload the page.</p>
+    </div>
+    <div class="modal-footer">
+      <span class="modal-action modal-close waves-effect waves-teal btn-flat">Close</span>
+      <span class="waves-effect waves-teal btn-flat" onclick="window.location.reload(false)">Reload Now</span>
+    </div>
+  </div>
+
+  <audio id="audio_correct_answer" preload="auto">
+    <source src="assets/correct_answer_sound.mp3" type="audio/mpeg">
+    <p>Sorry, your browser does not support the <code>audio</code> element.</p>
+  </audio>
+  <audio id="audio_wrong_answer" preload="auto">
+    <source src="assets/wrong_answer_sound.mp3" type="audio/mpeg">
+    <p>Sorry, your browser does not support the <code>audio</code> element.</p>
+  </audio>
+
+  <div id="fb-root"></div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57c1a713d54bf3e9"></script>
+  <!-- Modal Trigger -->
+  <a class="waves-effect waves-light btn" href="#modal1" style="display: none;">Modal</a>
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal" style="width: 300px; height: 120px; text-align: center; color: black; ">
+    
+    <div class="modal-content" style="margin-top: 22px;">
+      <span class="flow-text">Like us!</span>
+      <div class="fb-like" data-href="https://www.facebook.com/zennisproducts/" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="false"></div>
+    </div>
+  </div>
+  <script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function(event) { 
+    setTimeout(function() {
+      var isMobile = window.matchMedia("only screen and (max-width: 978px)");
+      if (!isMobile.matches) {
+         document.getElementsByClassName('at-expanding-share-button-toggle')[0].style.display = "none";
+      }
+    }, 4000);
+  });
+</script>
+
+  <script src="app/bundle.js?v=1482938120526"></script>
+   
+
+  <script type="text/javascript">
+    $('.at-svc-facebook').click(function() {
+      window.open('https://www.facebook.com/dialog/share?app_id=140586622674265&display=popup&href=http%3A%2F%2Fgame.zennisproducts.com%2F%23.WGPV3taGVlU.facebook&picture=&title=Quiz+music&description=Quiz+music+-+you+can+play+with+almost+music+in+the+world%21&redirect_uri=http%3A%2F%2Fs7.addthis.com%2Fstatic%2Fthankyou.html');
+      return false;
+    });
+  </script>
+</body>
+
 </html>
