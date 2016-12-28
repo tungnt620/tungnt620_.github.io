@@ -20,8 +20,8 @@
 <meta property="og:image" content="assets/music_quiz_social.jpg" />
 <meta property="og:description" content="Quiz music - you can play with almost music in the world!" />
 
-  <link rel="icon" href="assets/favicon.ico?v=1482932605374" type="image/x-icon">
-  <link rel="stylesheet" href="css/app.css?v=1482932605374">
+  <link rel="icon" href="assets/favicon.ico?v=1482933542522" type="image/x-icon">
+  <link rel="stylesheet" href="css/app.css?v=1482933542522">
 </head>
 
 <body class="cyan white-text">
@@ -54,14 +54,18 @@
   </audio>
 
   <div id="fb-root"></div>
-  
-  <script src="app/bundle.js?v=1482932605374"></script>
-   
-</body>
-
-</html>
-
-<script type="text/javascript">
+  <!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57c1a713d54bf3e9"></script>
+  <!-- Modal Trigger -->
+  <a class="waves-effect waves-light btn" href="#modal1" style="display: none;">Modal</a>
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal" style="width: 300px; height: 120px; text-align: center; color: black; ">
+    
+    <div class="modal-content" style="margin-top: 22px;">
+      <span class="flow-text">Like us!</span>
+      <div class="fb-like" data-href="https://www.facebook.com/zennisproducts/" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="false"></div>
+    </div>
+  </div>
+  <script type="text/javascript">
   document.addEventListener("DOMContentLoaded", function(event) { 
     setTimeout(function() {
       var isMobile = window.matchMedia("only screen and (max-width: 978px)");
@@ -71,3 +75,9 @@
     }, 4000);
   });
 </script>
+
+  <script src="app/bundle.js?v=1482933542522"></script>
+   
+</body>
+
+</html>
